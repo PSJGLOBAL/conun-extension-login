@@ -1,0 +1,87 @@
+.Button {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.primary {
+    background-color: var(--primary-color);
+    color: var(--primary-color-font);
+    font-weight: 500;
+  }
+
+  &.secondary {
+    background-color: var(--secondary-color-dark);
+    color: var(--secondary-color-font);
+    font-weight: 500;
+  }
+  &.tertiary {
+    background-color: var(--primary-color-font);
+    color: var(--tertiary-color-font);
+    font-weight: 500;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid #bac1d2;
+    color: #bac1d2;
+
+    &:hover {
+      border: 1px solid #6fb0e8;
+      color: #6fb0e8;
+    }
+    &:active {
+      background-color: #909ec1;
+      border: 1px solid #bac1d2;
+      color: white;
+    }
+  }
+
+  &:disabled {
+    background: #e9ebef;
+    box-shadow: none;
+    color: #ffff;
+    cursor: not-allowed;
+  }
+  &.medium {
+    height: 54px;
+    width: 270px;
+  }
+  &.large {
+    height: 56px;
+    width: 300px;
+  }
+  &.small {
+    height: 50px;
+    width: 145px;
+  }
+
+  &.smaller {
+    height: 44px;
+    width: 131px;
+  }
+  &.fontSmall {
+    font-size: 14px;
+  }
+
+  &.fontLarge {
+    font-size: 16px;
+  }
+}
+
+.NoStyleButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Spinner {
+  font-size: 8px;
+}

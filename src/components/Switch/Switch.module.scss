@@ -1,0 +1,13 @@
+.SwitchWrapper {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  width: 160px;
+}
+
+.Label {
+  color: var(--secondary-color-font);
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}

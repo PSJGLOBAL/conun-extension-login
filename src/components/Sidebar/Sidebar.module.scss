@@ -1,0 +1,84 @@
+.Sidebar {
+  & .MenuIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+.MenuSlide {
+  align-items: flex-end;
+  background-color: #6fb0e8;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  height: var(--app-height);
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 240px;
+  z-index: 1;
+
+  & .MenuButtons {
+    width: 100%;
+    & .MenuTitle {
+      border-bottom: solid 1px #fff;
+      font-size: 20px;
+      padding: 15px 0;
+      text-align: center;
+    }
+    & .Button {
+      color: #fff;
+      height: 50px;
+      padding: 0 10px;
+      text-transform: uppercase;
+      width: 100%;
+      &:hover {
+        background-color: #437dbf;
+      }
+      & .ButtonItem {
+        align-items: center;
+        border-bottom: solid 1px #fff;
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        height: 100%;
+        justify-content: flex-start;
+        letter-spacing: -0.03em;
+        padding-left: 20px;
+        & .Icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  & .Version {
+    padding-bottom: 8.5px;
+    padding-right: 30px;
+  }
+}
+.SecurityModal {
+  height: 300px;
+  width: 320px;
+
+  & .CheckboxContainer {
+    font-size: 14px;
+    font-weight: 500;
+
+    & .Checkbox {
+      margin-right: 5px;
+    }
+  }
+
+  & .TextboxContainer {
+    margin-top: 17px;
+  }
+
+  & .ButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+  }
+}

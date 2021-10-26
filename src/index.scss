@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --background-whole: linear-gradient(
+      218.86deg,
+      rgba(62, 198, 235, 0.79) -4.84%,
+      rgba(62, 198, 235, 0.34) 71.71%
+    ),
+    conic-gradient(
+      from 232.03deg at 104.44% 22.33%,
+      rgba(255, 86, 228, 0.49) -43.97deg,
+      rgba(255, 138, 130, 0.15) 145.14deg,
+      rgba(255, 86, 228, 0.49) 316.03deg,
+      rgba(255, 138, 130, 0.15) 505.14deg
+    ),
+    linear-gradient(
+      218.86deg,
+      rgba(62, 198, 235, 0.79) -4.84%,
+      rgba(62, 198, 235, 0.34) 71.71%
+    ),
+    conic-gradient(
+      from 232.03deg at 104.44% 22.33%,
+      rgba(255, 86, 228, 0.49) -43.97deg,
+      rgba(255, 138, 130, 0.15) 145.14deg,
+      rgba(255, 86, 228, 0.49) 316.03deg,
+      rgba(255, 138, 130, 0.15) 505.14deg
+    );
+  --background-top: linear-gradient(
+      224.01deg,
+      rgba(62, 198, 235, 0.79) -10.16%,
+      rgba(62, 198, 235, 0.34) 69.77%
+    ),
+    conic-gradient(
+      from 227.17deg at 50% 14.91%,
+      rgba(255, 86, 228, 0.49) -41.54deg,
+      rgba(255, 117, 169, 0.28701) 21.53deg,
+      rgba(255, 138, 130, 0.15) 205.33deg,
+      rgba(255, 86, 228, 0.49) 318.46deg,
+      rgba(255, 117, 169, 0.28701) 381.53deg
+    ),
+    linear-gradient(
+      224.01deg,
+      rgba(62, 198, 235, 0.79) -10.16%,
+      rgba(62, 198, 235, 0.34) 69.77%
+    ),
+    conic-gradient(
+      from 227.17deg at 50% 14.91%,
+      rgba(255, 86, 228, 0.49) -41.54deg,
+      rgba(255, 117, 169, 0.28701) 21.53deg,
+      rgba(255, 138, 130, 0.15) 205.33deg,
+      rgba(255, 86, 228, 0.49) 318.46deg,
+      rgba(255, 117, 169, 0.28701) 381.53deg
+    );
+  --background-button: linear-gradient(
+      225.01deg,
+      rgba(62, 198, 235, 0.79) -43.27%,
+      rgba(62, 198, 235, 0.34) 91.67%
+    ),
+    conic-gradient(
+      from 266deg at 102.46% 0%,
+      rgba(255, 86, 228, 0.49) -16.23deg,
+      rgba(255, 117, 169, 0.28701) 42.11deg,
+      rgba(255, 138, 130, 0.15) 247.75deg,
+      rgba(255, 86, 228, 0.49) 343.77deg,
+      rgba(255, 117, 169, 0.28701) 402.11deg
+    ),
+    linear-gradient(
+      225.01deg,
+      rgba(62, 198, 235, 0.79) -43.27%,
+      rgba(62, 198, 235, 0.34) 91.67%
+    ),
+    conic-gradient(
+      from 266deg at 102.46% 0%,
+      rgba(255, 86, 228, 0.49) -16.23deg,
+      rgba(255, 117, 169, 0.28701) 42.11deg,
+      rgba(255, 138, 130, 0.15) 247.75deg,
+      rgba(255, 86, 228, 0.49) 343.77deg,
+      rgba(255, 117, 169, 0.28701) 402.11deg
+    );
+  --qr-code-bar-bg: linear-gradient(
+      225.01deg,
+      rgba(62, 198, 235, 0.79) -43.27%,
+      rgba(62, 198, 235, 0.34) 91.67%
+    ),
+    conic-gradient(
+      from 266deg at 102.46% 0%,
+      rgba(255, 86, 228, 0.49) -16.23deg,
+      rgba(255, 117, 169, 0.28701) 42.11deg,
+      rgba(255, 138, 130, 0.15) 247.75deg,
+      rgba(255, 86, 228, 0.49) 343.77deg,
+      rgba(255, 117, 169, 0.28701) 402.11deg
+    ),
+    linear-gradient(
+      225.01deg,
+      rgba(62, 198, 235, 0.79) -43.27%,
+      rgba(62, 198, 235, 0.34) 91.67%
+    ),
+    conic-gradient(
+      from 266deg at 102.46% 0%,
+      rgba(255, 86, 228, 0.49) -16.23deg,
+      rgba(255, 117, 169, 0.28701) 42.11deg,
+      rgba(255, 138, 130, 0.15) 247.75deg,
+      rgba(255, 86, 228, 0.49) 343.77deg,
+      rgba(255, 117, 169, 0.28701) 402.11deg
+    ),
+    #fff;
+  --primary-color: #a0a3e2;
+  --primary-color-dark: #898df0;
+  --primary-color-font: #fff;
+  --secondary-color: #c1c4fc;
+  --secondary-color-dark: rgba(193, 196, 252, 0.5);
+  --secondary-color-font: #909ec1;
+  --tertiary-color-font: #437dbf;
+  --ui-red: #d61b1b;
+  --cancel-red: #f66;
+  --bg: #f8f8f9;
+  --bg-secondary: #e9ebef;
+  --grey: #666769;
+  --arrow-grey: #a2a2a2;
+  --green: #4da471;
+  --app-height: 600px;
+  --app-width: 360px;
+  --dark-purple: #8969b5;
+  --cba: #7b8cba;
+  --token-blue: #6fb0e8;
+  --conun-blue: #1d428a;
+}
+
+body {
+  height: var(--app-height) !important;
+  width: var(--app-width) !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg {
+  pointer-events: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}

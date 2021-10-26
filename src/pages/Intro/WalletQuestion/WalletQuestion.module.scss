@@ -1,0 +1,92 @@
+.WalletQuestion {
+  background-image: url("../../../assets/background/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(71, 60, 86, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 30px;
+  width: 100%;
+
+  & .Header {
+    color: var(--primary-color-font);
+    display: flex;
+    flex-direction: column;
+    height: 222px;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    & .BackButton {
+      height: 30px;
+      width: 30px;
+      z-index: 20;
+
+      & .GoBackIcon {
+        height: 30px;
+        pointer-events: none;
+        width: 30px;
+      }
+    }
+    & .Title {
+      font-size: 32px;
+      height: 100px;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+  }
+  & .Body {
+    color: var(--tertiary-color-font);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    margin-top: 10px;
+
+    & .AnswerOptions {
+      letter-spacing: -0.03em;
+
+      & .Options {
+        & p:first-child {
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        & p:last-child {
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+
+      & .AnswerButton {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+
+    & .UnableToLoginButton {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+
+      & > span {
+        color: var(--secondary-color-font);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        line-height: 16px;
+
+        &:first-child {
+          color: #f66;
+        }
+
+        &:last-child {
+          font-weight: 400;
+          &:hover {
+            color: var(--conun-blue);
+          }
+        }
+      }
+    }
+  }
+}

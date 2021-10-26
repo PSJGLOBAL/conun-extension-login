@@ -1,0 +1,73 @@
+.InputWrapper {
+  border: none;
+  color: var(--secondary-color-font);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & .Input {
+    border: 1px solid rgba(144, 158, 193, 0.5);
+    border-radius: 5px;
+    color: var(--cba);
+    height: 34px;
+    padding-left: 5px;
+
+    &:-webkit-autofill {
+      -webkit-text-fill-color: var(--cba);
+    }
+
+    &::placeholder {
+      color: var(--secondary-color-font);
+      font-size: 14px;
+      padding-left: 5px;
+      text-transform: uppercase;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &.hasError {
+      background-color: #ffe8e8;
+      border: solid 1px var(--ui-red);
+    }
+  }
+  & .Label {
+    color: var(--secondary-color-font);
+    display: flex;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    line-height: 16px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    top: 5px;
+
+    & .QuestionMark {
+      fill: #bac1d2;
+      margin-left: 5px;
+      width: 15px;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        fill: #8969b5;
+      }
+    }
+
+    & > div {
+      border-radius: 10px;
+      text-transform: none;
+    }
+  }
+  & .Error {
+    bottom: -15px;
+    color: var(--ui-red);
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.round {
+  border-radius: 5px;
+}

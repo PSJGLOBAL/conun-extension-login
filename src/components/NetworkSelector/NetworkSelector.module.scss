@@ -1,0 +1,60 @@
+.SelectContainer {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  filter: drop-shadow(0 1px 4px rgba(171, 171, 171, 0.8));
+  flex-direction: column;
+
+  & .Select {
+    align-items: center;
+    border: 2px solid var(--primary-color-font);
+    border-radius: 5px;
+    color: var(--primary-color-font);
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    height: 30px;
+    justify-content: space-around;
+    letter-spacing: -0.05em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+
+    &.colored {
+      background: var(--background-button);
+      color: var(--primary-color-font);
+    }
+
+    & .Arrow {
+      font-size: 12px;
+    }
+  }
+
+  & .Options {
+    color: var(--primary-color-font);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 31px;
+    width: 100%;
+
+    &.coloredOptions {
+      background: var(--background-button);
+    }
+
+    & .Option {
+      border: 1px solid var(--primary-color-font);
+      font-size: 11px;
+      padding: 4px;
+      position: relative;
+
+      &:hover {
+        background-color: var(--cba);
+      }
+    }
+  }
+}

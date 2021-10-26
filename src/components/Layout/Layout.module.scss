@@ -1,0 +1,22 @@
+.Layout {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  & .AppContainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+  }
+
+  & .MainWithMargin {
+    margin-top: 60px;
+  }
+}

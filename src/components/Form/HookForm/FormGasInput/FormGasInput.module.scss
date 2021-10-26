@@ -1,0 +1,60 @@
+.Wrapper {
+  align-items: center;
+  border: 1px solid rgba(144, 158, 193, 0.5);
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: var(--secondary-color-font);
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  width: 95px;
+
+  &.hasError {
+    background-color: #ffe8e8;
+    border: solid 1px var(--ui-red);
+  }
+
+  & .Input {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color-font);
+    font-size: 12px;
+    height: 35px;
+    line-height: 14px;
+    padding-left: 5px;
+    text-align: center;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--secondary-color-font);
+      font-size: 14px;
+      padding-left: 5px;
+      text-transform: uppercase;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  & .Label {
+    color: var(--secondary-color-font);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 15px;
+  }
+  & .Error {
+    bottom: -15px;
+    color: var(--ui-red);
+    font-size: 11px;
+    position: absolute;
+    right: 2px;
+  }
+}
+
+.round {
+  border-radius: 5px;
+}

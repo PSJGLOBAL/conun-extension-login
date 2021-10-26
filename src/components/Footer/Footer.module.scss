@@ -1,0 +1,108 @@
+.Footer {
+  background: var(--qr-code-bar-bg);
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 507px;
+  padding: 10px 20px;
+  position: absolute;
+  width: var(--app-width);
+
+  & .Header {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+
+    & .Network {
+      align-items: center;
+      display: flex;
+
+      & .Dot {
+        background-color: #50bd68;
+        border: solid 1px #fff;
+        border-radius: 50%;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+      }
+
+      & > span {
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+
+    & .QrCodeButton {
+      align-items: center;
+      background-color: #fff;
+      border: solid 2px #58c6e5;
+      border-radius: 50%;
+      display: flex;
+      height: 44px;
+      justify-content: center;
+      justify-self: center;
+      left: calc(50% - 20px);
+      position: absolute;
+      right: calc(50% - 20px);
+      top: -32px;
+      width: 44px;
+
+      & .QrCode {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & .Title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & .QrCodeWrapper {
+    margin-bottom: 50px;
+
+    & .QrCodeMain {
+      border-radius: 10px;
+      box-shadow: inset -2px -2px 3px rgba(237, 237, 237, 0.3),
+        inset 2px 2px 5px rgba(171, 171, 171, 0.3);
+    }
+  }
+
+  & .CopySection {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    & .CopyButton {
+      border: solid 2px #fff;
+      border-radius: 10px;
+      display: flex;
+      margin: 0 25px;
+      padding: 12px 23px;
+
+      &:hover {
+        filter: drop-shadow(0 1px 3px #ababab);
+        text-shadow: 0 1px 3px #ababab;
+      }
+
+      & .CopyIcon {
+        fill: #fff;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      & .WalletAddress {
+        color: #fff;
+        font-size: 13.5px;
+        font-size: 16px;
+        text-align: center;
+        word-break: break-all;
+      }
+    }
+  }
+}

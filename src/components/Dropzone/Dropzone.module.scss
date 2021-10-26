@@ -1,0 +1,45 @@
+.Container {
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: inset -2px -2px 3px rgba(237, 237, 237, 0.75),
+    inset 2px 2px 5px rgba(171, 171, 171, 0.75);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 41px 35px;
+  width: 100%;
+
+  & .Label {
+    color: #909ec1;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  & .LabelCenter {
+    text-align: center;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.hasFile {
+    & .Label {
+      align-items: center;
+      color: #909ec1;
+      display: flex;
+      word-break: break-all;
+
+      & .FileIcon {
+        margin-right: 5px;
+        width: 42px;
+      }
+      & .FileName {
+        text-align: start;
+      }
+    }
+  }
+}

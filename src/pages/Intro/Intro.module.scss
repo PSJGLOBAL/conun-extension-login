@@ -1,0 +1,7 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  height: var(--app-height);
+  justify-content: center;
+  width: var(--app-width);
+}

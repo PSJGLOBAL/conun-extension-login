@@ -1,0 +1,133 @@
+.Backup {
+  backdrop-filter: blur(50px);
+  background: var(--background-whole);
+  box-shadow: 5px 5px 10px rgba(71, 60, 86, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  mix-blend-mode: multiply;
+  padding: 74px 30px 49px 30px;
+  width: 100%;
+
+  & .Header {
+    align-items: center;
+    color: var(--primary-color-font);
+    display: flex;
+    flex-direction: column;
+
+    & .Title {
+      font-size: 32px;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    & .WalletAddressContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      margin-top: 18px;
+      overflow: hidden;
+      text-transform: uppercase;
+      width: 300px;
+
+      & .WalletAddress {
+        border-bottom: 0.5px solid #fff;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: -0.05em;
+        padding: 5px 10px 2px 10px;
+      }
+    }
+  }
+
+  & .FileUploadContainer {
+    align-items: center;
+    color: var(--secondary-color-font);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 26px;
+
+    & > p {
+      color: var(--primary-color-font);
+      text-transform: uppercase;
+    }
+
+    & .FileUploadButton {
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 1px 5px rgba(171, 171, 171, 0.7);
+      display: flex;
+      flex-direction: row;
+      font-size: 16px;
+      font-weight: 500;
+      justify-content: center;
+      width: 100%;
+
+      & .FileIcon {
+        fill: #437dbf;
+        margin-right: 5px;
+        width: 15px;
+      }
+    }
+    & .ActivateButton {
+      color: var(--secondary-color-font);
+    }
+  }
+
+  & .CheckBoxContainer {
+    display: flex;
+    margin-top: 7px;
+
+    & .CheckBox {
+      height: 16px;
+      margin-right: 6px;
+      width: 16px;
+    }
+
+    & .Label {
+      color: var(--primary-color-font);
+      font-size: 12px;
+      font-weight: 500;
+
+      & > span {
+        color: var(--tertiary-color-font);
+      }
+    }
+  }
+}
+.ConfirmModal {
+  border-radius: 10px;
+  top: 50%;
+  width: 320px;
+
+  & .ConfirmContainer {
+    color: var(--tertiary-color-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: left;
+
+    & .SubTitle {
+      display: flex;
+    }
+
+    & .Description {
+      font-weight: 300;
+      margin: 19px 0 31px 0;
+    }
+
+    & .ButtonsContainer {
+      display: flex;
+      justify-content: space-between;
+
+      & > button {
+        border-radius: 7px;
+        font-size: 12px;
+        height: 44px;
+        width: 131px;
+      }
+    }
+  }
+}

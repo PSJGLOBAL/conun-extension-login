@@ -1,0 +1,84 @@
+.TransactionInput {
+  border: none;
+  color: var(--secondary-color-font);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & .Label {
+    color: var(--secondary-color-font);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  & .Error {
+    bottom: -15px;
+    color: var(--ui-red);
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+  }
+
+  & .InputWrapper {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    height: 34px;
+    margin-top: 4px;
+    outline: none;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+
+    & .Token {
+      align-items: center;
+      background-color: var(--token-blue);
+      border-radius: 5px 0 0 5px;
+      color: white;
+      display: flex;
+      font-size: 16px;
+      height: 100%;
+      justify-content: center;
+      letter-spacing: -0.03em;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 20%;
+      &.hasError {
+        background-color: var(--ui-red);
+      }
+    }
+
+    & .Input {
+      border: 1px solid rgba(144, 158, 193, 0.5);
+      border-radius: 0 5px 5px 0;
+      color: #4c82b1;
+      cursor: not-allowed;
+      height: 100%;
+      padding-left: 8px;
+      width: 80%;
+
+      &:-webkit-autofill {
+        -webkit-text-fill-color: var(--cba);
+      }
+
+      &::placeholder {
+        color: var(--secondary-color-font);
+        font-size: 14px;
+        padding-left: 5px;
+        text-transform: uppercase;
+      }
+
+      &:focus {
+        outline: none;
+      }
+      &.hasError {
+        background-color: #ffe8e8;
+        border: solid 1px var(--ui-red);
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.Welcome {
+  backdrop-filter: blur(50px);
+  background: var(--background-whole);
+  box-shadow: 5px 5px 10px rgba(71, 60, 86, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  mix-blend-mode: multiply;
+  padding: 0 30px;
+  width: 100%;
+
+  & .ColumnTop {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46.12px;
+    margin-top: 88px;
+
+    & .Deer {
+      width: 220px;
+    }
+    & .Title {
+      color: var(--primary-color-font);
+      font-size: 18px;
+      margin-top: 24px;
+    }
+  }
+  & .ColumnBottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    & .ButtonLow {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+    & .HorizontalLine {
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+
+      &::before,
+      &::after {
+        border-bottom: 1px solid #fff;
+        content: "\a0";
+        height: 1px;
+        margin: auto 0.25em;
+        width: 132px;
+      }
+    }
+    & .SocialLogin {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+
+      & .Kakao {
+        height: 35px;
+        margin-right: 10px;
+        width: 35px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      & .Google {
+        height: 35px;
+        margin-left: 10px;
+        width: 35px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    & .Logo {
+      color: #1e4489;
+      margin-top: 30px;
+      opacity: 0.4;
+      width: 50px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.CreateWallet {
+  background-image: url("../../../assets/background/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(71, 60, 86, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 30px;
+  width: 100%;
+
+  & .Header {
+    color: var(--primary-color-font);
+    display: flex;
+    flex-direction: column;
+    height: 222px;
+    justify-content: space-around;
+    margin-top: 5px;
+
+    & .BackButton {
+      display: flex;
+      height: 30px;
+      width: 30px;
+      z-index: 20;
+
+      & .GoBackIcon {
+        height: 30px;
+        pointer-events: none;
+        width: 30px;
+      }
+    }
+
+    & .Title {
+      font-size: 32px;
+      height: 100px;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+  }
+  & .FormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 10px 0;
+  }
+
+  & .Description {
+    color: var(--tertiary-color-font);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 21px;
+  }
+}

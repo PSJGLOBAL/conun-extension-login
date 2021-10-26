@@ -1,0 +1,23 @@
+.UserBox {
+  display: flex;
+
+  & .InfoBox {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 12px;
+    & .Name {
+      font-size: 1rem;
+    }
+
+    & .Email {
+      font-size: 0.8rem;
+    }
+  }
+
+  & .ProfilePicture {
+    border: solid 3px #fff !important;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,47 @@
+.Header {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
+  position: relative;
+  width: var(--app-width);
+  z-index: 10;
+
+  &.fixed {
+    background: transparent;
+    justify-content: flex-end;
+    padding: 30px 30px 0 0;
+    position: fixed;
+    z-index: 10;
+  }
+
+  & .Network {
+    display: flex;
+    gap: 10px;
+  }
+
+  & .BlueSelected {
+    align-items: center;
+    background: var(--primary-color-font);
+    border-radius: 5px;
+    color: var(--secondary-color-font);
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    height: 20px;
+    padding: 0 5px;
+
+    & .GreenDot {
+      background-color: #50bd68;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+  }
+  & .isSelectBlue {
+    background: var(--background-button);
+    color: var(--primary-color-font);
+  }
+}
